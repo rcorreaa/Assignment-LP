@@ -1,3 +1,10 @@
+from enum import Enum #Importo o Enum.
+
+class ProductType(Enum): #Crio a classe ProductType.
+    FISICO = "Físico"
+    DIGITAL = "Digital"
+    VIRTUAL = "Virtual"
+
 class Produto: #Crio a classe Produto, com cada produto tendo um código de barras, nome e preço.
   def __init__(self, codigo_barras, nome, preco): 
       self.codigo_barras = codigo_barras #Defino os atributos desejados.
